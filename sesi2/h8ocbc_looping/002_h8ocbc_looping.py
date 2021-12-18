@@ -10,14 +10,18 @@ numbers = [
 genap = []
 ganjil = []
 for number in numbers: 
-    if number % 2 == 0:
-        genap.append(number)
-    else :
-        ganjil.append(number)
+  if number % 2 == 0:
+      genap.append(number)
+  else :
+      ganjil.append(number)
 
 #proses looping
 nomor = 918
 i = 0
+
+print('')
+print('Assignment 1_FSDO002ONL002_Widyawati Nur Sholikhah')
+print('')
 while i < len(genap):
   if genap[i] == nomor:
       # Processing for item found
@@ -26,8 +30,9 @@ while i < len(genap):
       break
   # Processing for item
   print(genap[i])
-  time.sleep(0.5) 
+  time.sleep(0.5) #jeda antar list
   i += 1
+  continue
 else:
   # Processing for item not found
   print(nomor, 'not found in list.')
