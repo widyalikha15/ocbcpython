@@ -4,3 +4,6 @@ https://drive.google.com/drive/folders/1YuNnpjGyJgjbta1eatWOuyEoK26SpnfZ
 D:\ocbcnisp\sesi32 python>python3 -m venv h8ocbc
 #run
 D:\ocbcnisp\sesi32 python\h8ocbc\Scripts>activate.bat
+
+
+Catatan online : https://drive.google.com/drive/folders/1YuNnpjGyJgjbta1eatWOuyEoK26SpnfZ
