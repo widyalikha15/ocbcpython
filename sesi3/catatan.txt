@@ -1,0 +1,421 @@
+#memanggil module package
+D:\ocbcnisp\ocbcpython\sesi3\contoh>python
+import person
+person.name
+
+D:\ocbcnisp\ocbcpython\sesi3>python
+
+
+Microsoft Windows [Version 10.0.19043.1348]
+(c) Microsoft Corporation. All rights reserved.
+
+D:\ocbcnisp\ocbcpython\sesi3\contoh>python
+Python 3.8.10 (tags/v3.8.10:3d8993a, May  3 2021, 11:48:03) [MSC v.1928 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import person
+>>> person
+<module 'person' from 'D:\\ocbcnisp\\ocbcpython\\sesi3\\contoh\\person.py'>
+>>> name
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'name' is not defined
+>>> person.name
+'zack'
+>>> import person2
+>>> person.devices
+['laptop', 'smartphone', 'tablet']
+>>> from person import name, devices
+>>> name
+'zack'
+>>>
+
+>>> from H8py import person
+>>> from H8py2 import person2 
+>>> person.name
+'zack'
+>>> person2.name
+'zack'
+>>>
+
+
+Microsoft Windows [Version 10.0.19043.1348]
+(c) Microsoft Corporation. All rights reserved.
+
+D:\ocbcnisp\ocbcpython\sesi3\contoh>python
+Python 3.8.10 (tags/v3.8.10:3d8993a, May  3 2021, 11:48:03) [MSC v.1928 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import person3
+>>> person3.display('Good Morning')
+arg = Good Morning
+>>> import car
+brands =  ['honda', 'toyota', 'ford']
+>>> import car
+>>> car.brands
+['honda', 'toyota', 'ford']
+>>> import importlib
+>>> importlib.reload(car)
+brands =  ['honda', 'toyota', 'ford']
+<module 'car' from 'D:\\ocbcnisp\\ocbcpython\\sesi3\\contoh\\car.py'>
+>>>
+
+
+
+
+Microsoft Windows [Version 10.0.19043.1348]
+(c) Microsoft Corporation. All rights reserved.
+
+D:\ocbcnisp\ocbcpython\sesi3\contoh>python
+Python 3.8.10 (tags/v3.8.10:3d8993a, May  3 2021, 11:48:03) [MSC v.1928 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import pkg.mod1, pkg.mod2
+>>> pkg.mod1.kitchen_sets
+['fork', 'spoon', 'plate']
+>>> pkg.mod2.artist_kits
+['guitar', 'bass', 'drum']
+>>> from pkg.mod1 import kitchen_sets
+>>> kitchen_sets
+['fork', 'spoon', 'plate']
+>>> from pkg.mod1 import kitchen_sets as ks
+>>> ks
+['fork', 'spoon', 'plate']
+>>> from pkg import mod1
+>>> mod1.kitchen_sets
+['fork', 'spoon', 'plate']
+>>> from pkg import mod2 as m2
+>>> m2.color
+'yellow'
+>>> from pkg import mod1
+>>> mod1.kitchen_sets
+['fork', 'spoon', 'plate']
+>>> from pkg import mod2 as m2
+>>> m2.color
+'yellow'
+>>>
+
+
+Microsoft Windows [Version 10.0.19043.1348]
+(c) Microsoft Corporation. All rights reserved.
+
+D:\ocbcnisp\ocbcpython\sesi3\contohpackage\Scripts>activate
+
+(contohpackage) D:\ocbcnisp\ocbcpython\sesi3\contohpackage\Scripts>pip --version
+pip 21.1.1 from d:\ocbcnisp\ocbcpython\sesi3\contohpackage\lib\site-packages\pip (python 3.8)
+
+(contohpackage) D:\ocbcnisp\ocbcpython\sesi3\contohpackage\Scripts>!pip install TwitterAPI
+'!pip' is not recognized as an internal or external command,
+operable program or batch file.
+
+(contohpackage) D:\ocbcnisp\ocbcpython\sesi3\contohpackage\Scripts>pip help
+
+Usage:
+  pip <command> [options]
+
+Commands:
+  install                     Install packages.
+  download                    Download packages.
+  uninstall                   Uninstall packages.
+  freeze                      Output installed packages in requirements format.
+  list                        List installed packages.
+  show                        Show information about installed packages.
+  check                       Verify installed packages have compatible dependencies.
+  config                      Manage local and global configuration.
+  search                      Search PyPI for packages.
+  cache                       Inspect and manage pip's wheel cache.
+  wheel                       Build wheels from your requirements.
+  hash                        Compute hashes of package archives.
+  completion                  A helper command used for command completion.
+  debug                       Show information useful for debugging.
+  help                        Show help for commands.
+
+General Options:
+  -h, --help                  Show help.
+  --isolated                  Run pip in an isolated mode, ignoring environment variables and user configuration.
+  -v, --verbose               Give more output. Option is additive, and can be used up to 3 times.
+  -V, --version               Show version and exit.
+  -q, --quiet                 Give less output. Option is additive, and can be used up to 3 times (corresponding to WARNING,     
+                              ERROR, and CRITICAL logging levels).
+  --log <path>                Path to a verbose appending log.
+  --no-input                  Disable prompting for input.
+  --proxy <proxy>             Specify a proxy in the form [user:passwd@]proxy.server:port.
+  --retries <retries>         Maximum number of retries each connection should attempt (default 5 times).
+  --timeout <sec>             Set the socket timeout (default 15 seconds).
+  --exists-action <action>    Default action when a path already exists: (s)witch, (i)gnore, (w)ipe, (b)ackup, (a)bort.
+  --trusted-host <hostname>   Mark this host or host:port pair as trusted, even though it does not have valid or any HTTPS.      
+  --cert <path>               Path to PEM-encoded CA certificate bundle. If provided, overrides the default. See 'SSL
+                              Certificate Verification' in pip documentation for more information.
+  --client-cert <path>        Path to SSL client certificate, a single file containing the private key and the certificate in    
+                              PEM format.
+  --cache-dir <dir>           Store the cache data in <dir>.
+  --no-cache-dir              Disable the cache.
+  --disable-pip-version-check
+                              Don't periodically check PyPI to determine whether a new version of pip is available for
+                              download. Implied with --no-index.
+  --no-color                  Suppress colored output.
+  --no-python-version-warning
+                              Silence deprecation warnings for upcoming unsupported Pythons.
+  --use-feature <feature>     Enable new functionality, that may be backward incompatible.
+  --use-deprecated <feature>  Enable deprecated functionality, that will be removed in the future.
+
+(contohpackage) D:\ocbcnisp\ocbcpython\sesi3\contohpackage\Scripts>pip install requests
+Collecting requests
+  Using cached requests-2.26.0-py2.py3-none-any.whl (62 kB)
+Collecting urllib3<1.27,>=1.21.1
+  Downloading urllib3-1.26.7-py2.py3-none-any.whl (138 kB)
+     |████████████████████████████████| 138 kB 726 kB/s
+Collecting charset-normalizer~=2.0.0
+  Downloading charset_normalizer-2.0.9-py3-none-any.whl (39 kB)
+Collecting idna<4,>=2.5
+  Downloading idna-3.3-py3-none-any.whl (61 kB)
+     |████████████████████████████████| 61 kB 1.3 MB/s
+Collecting certifi>=2017.4.17
+  Downloading certifi-2021.10.8-py2.py3-none-any.whl (149 kB)
+     |████████████████████████████████| 149 kB 218 kB/s
+Installing collected packages: urllib3, idna, charset-normalizer, certifi, requests
+Successfully installed certifi-2021.10.8 charset-normalizer-2.0.9 idna-3.3 requests-2.26.0 urllib3-1.26.7
+WARNING: You are using pip version 21.1.1; however, version 21.3.1 is available.
+You should consider upgrading via the 'd:\ocbcnisp\ocbcpython\sesi3\contohpackage\scripts\python.exe -m pip install --upgrade pip' command.
+
+(contohpackage) D:\ocbcnisp\ocbcpython\sesi3\contohpackage\Scripts>pip help
+
+Usage:
+  pip <command> [options]
+
+Commands:
+  install                     Install packages.
+  download                    Download packages.
+  uninstall                   Uninstall packages.
+  freeze                      Output installed packages in requirements format.
+  list                        List installed packages.
+  show                        Show information about installed packages.
+  check                       Verify installed packages have compatible dependencies.
+  config                      Manage local and global configuration.
+  search                      Search PyPI for packages.
+  cache                       Inspect and manage pip's wheel cache.
+  wheel                       Build wheels from your requirements.
+  hash                        Compute hashes of package archives.
+  completion                  A helper command used for command completion.
+  debug                       Show information useful for debugging.
+  help                        Show help for commands.
+
+General Options:
+  -h, --help                  Show help.
+  --isolated                  Run pip in an isolated mode, ignoring environment variables and user configuration.
+  -v, --verbose               Give more output. Option is additive, and can be used up to 3 times.
+  -V, --version               Show version and exit.
+  -q, --quiet                 Give less output. Option is additive, and can be used up to 3 times (corresponding to WARNING,     
+                              ERROR, and CRITICAL logging levels).
+  --log <path>                Path to a verbose appending log.
+  --no-input                  Disable prompting for input.
+  --proxy <proxy>             Specify a proxy in the form [user:passwd@]proxy.server:port.
+  --retries <retries>         Maximum number of retries each connection should attempt (default 5 times).
+  --timeout <sec>             Set the socket timeout (default 15 seconds).
+  --exists-action <action>    Default action when a path already exists: (s)witch, (i)gnore, (w)ipe, (b)ackup, (a)bort.
+  --trusted-host <hostname>   Mark this host or host:port pair as trusted, even though it does not have valid or any HTTPS.      
+  --cert <path>               Path to PEM-encoded CA certificate bundle. If provided, overrides the default. See 'SSL
+                              Certificate Verification' in pip documentation for more information.
+  --client-cert <path>        Path to SSL client certificate, a single file containing the private key and the certificate in    
+                              PEM format.
+  --cache-dir <dir>           Store the cache data in <dir>.
+  --no-cache-dir              Disable the cache.
+  --disable-pip-version-check
+                              Don't periodically check PyPI to determine whether a new version of pip is available for
+                              download. Implied with --no-index.
+  --no-color                  Suppress colored output.
+  --no-python-version-warning
+                              Silence deprecation warnings for upcoming unsupported Pythons.
+  --use-feature <feature>     Enable new functionality, that may be backward incompatible.
+  --use-deprecated <feature>  Enable deprecated functionality, that will be removed in the future.
+
+(contohpackage) D:\ocbcnisp\ocbcpython\sesi3\contohpackage\Scripts>python -m pip install --upgrade pip
+Requirement already satisfied: pip in d:\ocbcnisp\ocbcpython\sesi3\contohpackage\lib\site-packages (21.1.1)
+Collecting pip
+  Downloading pip-21.3.1-py3-none-any.whl (1.7 MB)
+     |████████████████████████████████| 1.7 MB 467 kB/s
+Installing collected packages: pip
+  Attempting uninstall: pip
+    Found existing installation: pip 21.1.1
+    Uninstalling pip-21.1.1:
+      Successfully uninstalled pip-21.1.1
+ERROR: Operation cancelled by user
+
+(contohpackage) D:\ocbcnisp\ocbcpython\sesi3\contohpackage\Scripts>
+
+(contohpackage) D:\ocbcnisp\ocbcpython\sesi3\contohpackage\Scripts>pip list                             
+Package            Version
+------------------ ---------
+astroid            2.4.2
+backcall           0.2.0
+blis               0.7.4
+catalogue          2.0.4
+certifi            2021.5.30
+charset-normalizer 2.0.4
+click              7.1.2
+colorama           0.4.3
+cx-Freeze          6.7
+cx-Logging         3.0
+cymem              2.0.5
+decorator          5.0.6
+idna               3.2
+importlib-metadata 4.6.3
+ipykernel          5.5.3
+ipython            7.22.0
+ipython-genutils   0.2.0
+isort              5.5.2
+jedi               0.18.0
+Jinja2             3.0.1
+joblib             0.16.0
+jupyter-client     6.1.12
+jupyter-core       4.7.1
+lazy-object-proxy  1.4.3
+MarkupSafe         2.0.1
+mccabe             0.6.1
+murmurhash         1.0.5
+nltk               3.5
+numpy              1.21.1
+packaging          21.0
+pandas             1.3.1
+parso              0.8.2
+pathy              0.6.0
+pickleshare        0.7.5
+pip                21.2.2
+preshed            3.0.5
+prompt-toolkit     3.0.18
+pydantic           1.8.2
+pyfiglet           0.8.post1
+Pygments           2.8.1
+pylint             2.6.0
+pyparsing          2.4.7
+PySastrawi         1.2.0
+python-dateutil    2.8.1
+python-pipeline    1.0
+pytz               2021.1
+pywin32            300
+pyzmq              22.0.3
+regex              2020.7.14
+requests           2.26.0
+Sastrawi           1.0.1
+scipy              1.7.1
+six                1.15.0
+smart-open         5.1.0
+spacy              3.1.1
+spacy-legacy       3.0.8
+srsly              2.4.1
+tabulate           0.8.9
+textblob           0.15.3
+thinc              8.0.8
+threadpoolctl      2.2.0
+toml               0.10.1
+tornado            6.1
+tqdm               4.49.0
+traitlets          5.0.5
+typer              0.3.2
+typing-extensions  3.10.0.0
+urllib3            1.26.6
+wasabi             0.8.2
+wcwidth            0.2.5
+wrapt              1.12.1
+zipp               3.5.0
+WARNING: You are using pip version 21.2.2; however, version 21.3.1 is available.
+You should consider upgrading via the 'C:\Users\User\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\python.exe -m pip install --upgrade pip' command.
+
+(contohpackage) D:\ocbcnisp\ocbcpython\sesi3\contohpackage\Scripts>pip show requests
+Name: requests
+Version: 2.26.0
+Summary: Python HTTP for Humans.
+Home-page: https://requests.readthedocs.io
+Author: Kenneth Reitz
+Author-email: me@kennethreitz.org
+License: Apache 2.0
+Location: c:\users\user\appdata\local\packages\pythonsoftwarefoundation.python.3.8_qbz5n2kfra8p0\localcache\local-packages\python38\site-packages
+Requires: certifi, urllib3, idna, charset-normalizer
+Required-by: spacy
+
+(contohpackage) D:\ocbcnisp\ocbcpython\sesi3\contohpackage\Scripts>import requests
+'import' is not recognized as an internal or external command,
+operable program or batch file.
+
+(contohpackage) D:\ocbcnisp\ocbcpython\sesi3\contohpackage\Scripts>pip freeze > requirements.txt
+
+(contohpackage) D:\ocbcnisp\ocbcpython\sesi3\contohpackage\Scripts>cat requirements.txt
+'cat' is not recognized as an internal or external command,
+operable program or batch file.
+
+(contohpackage) D:\ocbcnisp\ocbcpython\sesi3\contohpackage\Scripts>pip install -r requirements.txt
+Requirement already satisfied: astroid==2.4.2 in c:\users\user\appdata\local\packages\pythonsoftwarefoundation.python.3.8_qbz5n2kfra8p0\localcache\local-packages\python38\site-packages (from -r requirements.txt (line 1)) (2.4.2)
+Requirement already satisfied: backcall==0.2.0 in c:\users\user\appdata\local\packages\pythonsoftwarefoundation.python.3.8_qbz5n2kfra8p0\localcache\local-packages\python38\site-packages (from -r requirements.txt (line 2)) (0.2.0)
+Requirement already satisfied: blis==0.7.4 in c:\users\user\appdata\local\packages\pythonsoftwarefoundation.python.3.8_qbz5n2kfra8p0\localcache\local-packages\python38\site-packages (from -r requirements.txt (line 3)) (0.7.4)
+Requirement already satisfied: catalogue==2.0.4 in c:\users\user\appdata\local\packages\pythonsoftwarefoundation.python.3.8_qbz5n2kfra8p0\localcache\local-packages\python38\site-packages (from -r requirements.txt (line 4)) (2.0.4)
+Requirement already satisfied: certifi==2021.5.30 in c:\users\user\appdata\local\packages\pythonsoftwarefoundation.python.3.8_qbz5n2kfra8p0\localcache\local-packages\python38\site-packages (from -r requirements.txt (line 5)) (2021.5.30)
+Requirement already satisfied: charset-normalizer==2.0.4 in c:\users\user\appdata\local\packages\pythonsoftwarefoundation.python.3.8_qbz5n2kfra8p0\localcache\local-packages\python38\site-packages (from -r requirements.txt (line 6)) (2.0.4)
+Requirement already satisfied: click==7.1.2 in c:\users\user\appdata\local\packages\pythonsoftwarefoundation.python.3.8_qbz5n2kfra8p0\localcache\local-packages\python38\site-packages (from -r requirements.txt (line 7)) (7.1.2)
+Requirement already satisfied: colorama==0.4.3 in c:\users\user\appdata\local\packages\pythonsoftwarefoundation.python.3.8_qbz5n2kfra8p0\localcache\local-packages\python38\site-packages (from -r requirements.txt (line 8)) (0.4.3)
+Requirement already satisfied: cx-Freeze==6.7 in c:\users\user\appdata\local\packages\pythonsoftwarefoundation.python.3.8_qbz5n2kfra8p0\localcache\local-packages\python38\site-packages (from -r requirements.txt (line 9)) (6.7)
+Requirement already satisfied: cx-Logging==3.0 in c:\users\user\appdata\local\packages\pythonsoftwarefoundation.python.3.8_qbz5n2kfra8p0\localcache\local-packages\python38\site-packages (from -r requirements.txt (line 10)) (3.0)
+Requirement already satisfied: cymem==2.0.5 in c:\users\user\appdata\local\packages\pythonsoftwarefoundation.python.3.8_qbz5n2kfra8p0\localcache\local-packages\python38\site-packages (from -r requirements.txt (line 11)) (2.0.5)
+Requirement already satisfied: decorator==5.0.6 in c:\users\user\appdata\local\packages\pythonsoftwarefoundation.python.3.8_qbz5n2kfra8p0\localcache\local-packages\python38\site-packages (from -r requirements.txt (line 12)) (5.0.6)
+Requirement already satisfied: idna==3.2 in c:\users\user\appdata\local\packages\pythonsoftwarefoundation.python.3.8_qbz5n2kfra8p0\localcache\local-packages\python38\site-packages (from -r requirements.txt (line 13)) (3.2)
+Requirement already satisfied: importlib-metadata==4.6.3 in c:\users\user\appdata\local\packages\pythonsoftwarefoundation.python.3.8_qbz5n2kfra8p0\localcache\local-packages\python38\site-packages (from -r requirements.txt (line 14)) (4.6.3)
+Requirement already satisfied: ipykernel==5.5.3 in c:\users\user\appdata\local\packages\pythonsoftwarefoundation.python.3.8_qbz5n2kfra8p0\localcache\local-packages\python38\site-packages (from -r requirements.txt (line 15)) (5.5.3)
+Requirement already satisfied: ipython==7.22.0 in c:\users\user\appdata\local\packages\pythonsoftwarefoundation.python.3.8_qbz5n2kfra8p0\localcache\local-packages\python38\site-packages (from -r requirements.txt (line 16)) (7.22.0)
+Requirement already satisfied: ipython-genutils==0.2.0 in c:\users\user\appdata\local\packages\pythonsoftwarefoundation.python.3.8_qbz5n2kfra8p0\localcache\local-packages\python38\site-packages (from -r requirements.txt (line 17)) (0.2.0)
+Requirement already satisfied: isort==5.5.2 in c:\users\user\appdata\local\packages\pythonsoftwarefoundation.python.3.8_qbz5n2kfra8p0\localcache\local-packages\python38\site-packages (from -r requirements.txt (line 18)) (5.5.2)
+Requirement already satisfied: jedi==0.18.0 in c:\users\user\appdata\local\packages\pythonsoftwarefoundation.python.3.8_qbz5n2kfra8p0\localcache\local-packages\python38\site-packages (from -r requirements.txt (line 19)) (0.18.0)
+Requirement already satisfied: Jinja2==3.0.1 in c:\users\user\appdata\local\packages\pythonsoftwarefoundation.python.3.8_qbz5n2kfra8p0\localcache\local-packages\python38\site-packages (from -r requirements.txt (line 20)) (3.0.1)
+Requirement already satisfied: joblib==0.16.0 in c:\users\user\appdata\local\packages\pythonsoftwarefoundation.python.3.8_qbz5n2kfra8p0\localcache\local-packages\python38\site-packages (from -r requirements.txt (line 21)) (0.16.0)
+Requirement already satisfied: jupyter-client==6.1.12 in c:\users\user\appdata\local\packages\pythonsoftwarefoundation.python.3.8_qbz5n2kfra8p0\localcache\local-packages\python38\site-packages (from -r requirements.txt (line 22)) (6.1.12)
+Requirement already satisfied: jupyter-core==4.7.1 in c:\users\user\appdata\local\packages\pythonsoftwarefoundation.python.3.8_qbz5n2kfra8p0\localcache\local-packages\python38\site-packages (from -r requirements.txt (line 23)) (4.7.1)
+Requirement already satisfied: lazy-object-proxy==1.4.3 in c:\users\user\appdata\local\packages\pythonsoftwarefoundation.python.3.8_qbz5n2kfra8p0\localcache\local-packages\python38\site-packages (from -r requirements.txt (line 24)) (1.4.3)
+Requirement already satisfied: MarkupSafe==2.0.1 in c:\users\user\appdata\local\packages\pythonsoftwarefoundation.python.3.8_qbz5n2kfra8p0\localcache\local-packages\python38\site-packages (from -r requirements.txt (line 25)) (2.0.1)
+Requirement already satisfied: mccabe==0.6.1 in c:\users\user\appdata\local\packages\pythonsoftwarefoundation.python.3.8_qbz5n2kfra8p0\localcache\local-packages\python38\site-packages (from -r requirements.txt (line 26)) (0.6.1)
+Requirement already satisfied: murmurhash==1.0.5 in c:\users\user\appdata\local\packages\pythonsoftwarefoundation.python.3.8_qbz5n2kfra8p0\localcache\local-packages\python38\site-packages (from -r requirements.txt (line 27)) (1.0.5)
+Requirement already satisfied: nltk==3.5 in c:\users\user\appdata\local\packages\pythonsoftwarefoundation.python.3.8_qbz5n2kfra8p0\localcache\local-packages\python38\site-packages (from -r requirements.txt (line 28)) (3.5)
+Requirement already satisfied: numpy==1.21.1 in c:\users\user\appdata\local\packages\pythonsoftwarefoundation.python.3.8_qbz5n2kfra8p0\localcache\local-packages\python38\site-packages (from -r requirements.txt (line 29)) (1.21.1)
+Requirement already satisfied: packaging==21.0 in c:\users\user\appdata\local\packages\pythonsoftwarefoundation.python.3.8_qbz5n2kfra8p0\localcache\local-packages\python38\site-packages (from -r requirements.txt (line 30)) (21.0)
+Requirement already satisfied: pandas==1.3.1 in c:\users\user\appdata\local\packages\pythonsoftwarefoundation.python.3.8_qbz5n2kfra8p0\localcache\local-packages\python38\site-packages (from -r requirements.txt (line 31)) (1.3.1)
+Requirement already satisfied: parso==0.8.2 in c:\users\user\appdata\local\packages\pythonsoftwarefoundation.python.3.8_qbz5n2kfra8p0\localcache\local-packages\python38\site-packages (from -r requirements.txt (line 32)) (0.8.2)
+Requirement already satisfied: pathy==0.6.0 in c:\users\user\appdata\local\packages\pythonsoftwarefoundation.python.3.8_qbz5n2kfra8p0\localcache\local-packages\python38\site-packages (from -r requirements.txt (line 33)) (0.6.0)
+Requirement already satisfied: pickleshare==0.7.5 in c:\users\user\appdata\local\packages\pythonsoftwarefoundation.python.3.8_qbz5n2kfra8p0\localcache\local-packages\python38\site-packages (from -r requirements.txt (line 34)) (0.7.5)
+Requirement already satisfied: preshed==3.0.5 in c:\users\user\appdata\local\packages\pythonsoftwarefoundation.python.3.8_qbz5n2kfra8p0\localcache\local-packages\python38\site-packages (from -r requirements.txt (line 35)) (3.0.5)
+Requirement already satisfied: prompt-toolkit==3.0.18 in c:\users\user\appdata\local\packages\pythonsoftwarefoundation.python.3.8_qbz5n2kfra8p0\localcache\local-packages\python38\site-packages (from -r requirements.txt (line 36)) (3.0.18)
+Requirement already satisfied: pydantic==1.8.2 in c:\users\user\appdata\local\packages\pythonsoftwarefoundation.python.3.8_qbz5n2kfra8p0\localcache\local-packages\python38\site-packages (from -r requirements.txt (line 37)) (1.8.2)
+Requirement already satisfied: pyfiglet==0.8.post1 in c:\users\user\appdata\local\packages\pythonsoftwarefoundation.python.3.8_qbz5n2kfra8p0\localcache\local-packages\python38\site-packages (from -r requirements.txt (line 38)) (0.8.post1)
+Requirement already satisfied: Pygments==2.8.1 in c:\users\user\appdata\local\packages\pythonsoftwarefoundation.python.3.8_qbz5n2kfra8p0\localcache\local-packages\python38\site-packages (from -r requirements.txt (line 39)) (2.8.1)
+Requirement already satisfied: pylint==2.6.0 in c:\users\user\appdata\local\packages\pythonsoftwarefoundation.python.3.8_qbz5n2kfra8p0\localcache\local-packages\python38\site-packages (from -r requirements.txt (line 40)) (2.6.0)
+Requirement already satisfied: pyparsing==2.4.7 in c:\users\user\appdata\local\packages\pythonsoftwarefoundation.python.3.8_qbz5n2kfra8p0\localcache\local-packages\python38\site-packages (from -r requirements.txt (line 41)) (2.4.7)
+Requirement already satisfied: PySastrawi==1.2.0 in c:\users\user\appdata\local\packages\pythonsoftwarefoundation.python.3.8_qbz5n2kfra8p0\localcache\local-packages\python38\site-packages (from -r requirements.txt (line 42)) (1.2.0)
+Requirement already satisfied: python-dateutil==2.8.1 in c:\users\user\appdata\local\packages\pythonsoftwarefoundation.python.3.8_qbz5n2kfra8p0\localcache\local-packages\python38\site-packages (from -r requirements.txt (line 43)) (2.8.1)
+Requirement already satisfied: python-pipeline==1.0 in c:\users\user\appdata\local\packages\pythonsoftwarefoundation.python.3.8_qbz5n2kfra8p0\localcache\local-packages\python38\site-packages (from -r requirements.txt (line 44)) (1.0)
+Requirement already satisfied: pytz==2021.1 in c:\users\user\appdata\local\packages\pythonsoftwarefoundation.python.3.8_qbz5n2kfra8p0\localcache\local-packages\python38\site-packages (from -r requirements.txt (line 45)) (2021.1)
+Requirement already satisfied: pywin32==300 in c:\users\user\appdata\local\packages\pythonsoftwarefoundation.python.3.8_qbz5n2kfra8p0\localcache\local-packages\python38\site-packages (from -r requirements.txt (line 46)) (300)
+Requirement already satisfied: pyzmq==22.0.3 in c:\users\user\appdata\local\packages\pythonsoftwarefoundation.python.3.8_qbz5n2kfra8p0\localcache\local-packages\python38\site-packages (from -r requirements.txt (line 47)) (22.0.3)
+Requirement already satisfied: regex==2020.7.14 in c:\users\user\appdata\local\packages\pythonsoftwarefoundation.python.3.8_qbz5n2kfra8p0\localcache\local-packages\python38\site-packages (from -r requirements.txt (line 48)) (2020.7.14)
+Requirement already satisfied: requests==2.26.0 in c:\users\user\appdata\local\packages\pythonsoftwarefoundation.python.3.8_qbz5n2kfra8p0\localcache\local-packages\python38\site-packages (from -r requirements.txt (line 49)) (2.26.0)
+Requirement already satisfied: Sastrawi==1.0.1 in c:\users\user\appdata\local\packages\pythonsoftwarefoundation.python.3.8_qbz5n2kfra8p0\localcache\local-packages\python38\site-packages (from -r requirements.txt (line 50)) (1.0.1)
+Requirement already satisfied: scipy==1.7.1 in c:\users\user\appdata\local\packages\pythonsoftwarefoundation.python.3.8_qbz5n2kfra8p0\localcache\local-packages\python38\site-packages (from -r requirements.txt (line 51)) (1.7.1)
+Requirement already satisfied: six==1.15.0 in c:\users\user\appdata\local\packages\pythonsoftwarefoundation.python.3.8_qbz5n2kfra8p0\localcache\local-packages\python38\site-packages (from -r requirements.txt (line 52)) (1.15.0)
+Requirement already satisfied: smart-open==5.1.0 in c:\users\user\appdata\local\packages\pythonsoftwarefoundation.python.3.8_qbz5n2kfra8p0\localcache\local-packages\python38\site-packages (from -r requirements.txt (line 53)) (5.1.0)
+Requirement already satisfied: spacy==3.1.1 in c:\users\user\appdata\local\packages\pythonsoftwarefoundation.python.3.8_qbz5n2kfra8p0\localcache\local-packages\python38\site-packages (from -r requirements.txt (line 54)) (3.1.1)
+Requirement already satisfied: spacy-legacy==3.0.8 in c:\users\user\appdata\local\packages\pythonsoftwarefoundation.python.3.8_qbz5n2kfra8p0\localcache\local-packages\python38\site-packages (from -r requirements.txt (line 55)) (3.0.8)
+Requirement already satisfied: srsly==2.4.1 in c:\users\user\appdata\local\packages\pythonsoftwarefoundation.python.3.8_qbz5n2kfra8p0\localcache\local-packages\python38\site-packages (from -r requirements.txt (line 56)) (2.4.1)
+Requirement already satisfied: tabulate==0.8.9 in c:\users\user\appdata\local\packages\pythonsoftwarefoundation.python.3.8_qbz5n2kfra8p0\localcache\local-packages\python38\site-packages (from -r requirements.txt (line 57)) (0.8.9)
+Requirement already satisfied: textblob==0.15.3 in c:\users\user\appdata\local\packages\pythonsoftwarefoundation.python.3.8_qbz5n2kfra8p0\localcache\local-packages\python38\site-packages (from -r requirements.txt (line 58)) (0.15.3)
+Requirement already satisfied: thinc==8.0.8 in c:\users\user\appdata\local\packages\pythonsoftwarefoundation.python.3.8_qbz5n2kfra8p0\localcache\local-packages\python38\site-packages (from -r requirements.txt (line 59)) (8.0.8)
+Requirement already satisfied: threadpoolctl==2.2.0 in c:\users\user\appdata\local\packages\pythonsoftwarefoundation.python.3.8_qbz5n2kfra8p0\localcache\local-packages\python38\site-packages (from -r requirements.txt (line 60)) (2.2.0)
+Requirement already satisfied: toml==0.10.1 in c:\users\user\appdata\local\packages\pythonsoftwarefoundation.python.3.8_qbz5n2kfra8p0\localcache\local-packages\python38\site-packages (from -r requirements.txt (line 61)) (0.10.1)
+Requirement already satisfied: tornado==6.1 in c:\users\user\appdata\local\packages\pythonsoftwarefoundation.python.3.8_qbz5n2kfra8p0\localcache\local-packages\python38\site-packages (from -r requirements.txt (line 62)) (6.1)
+Requirement already satisfied: tqdm==4.49.0 in c:\users\user\appdata\local\packages\pythonsoftwarefoundation.python.3.8_qbz5n2kfra8p0\localcache\local-packages\python38\site-packages (from -r requirements.txt (line 63)) (4.49.0)
+Requirement already satisfied: traitlets==5.0.5 in c:\users\user\appdata\local\packages\pythonsoftwarefoundation.python.3.8_qbz5n2kfra8p0\localcache\local-packages\python38\site-packages (from -r requirements.txt (line 64)) (5.0.5)
+Requirement already satisfied: typer==0.3.2 in c:\users\user\appdata\local\packages\pythonsoftwarefoundation.python.3.8_qbz5n2kfra8p0\localcache\local-packages\python38\site-packages (from -r requirements.txt (line 65)) (0.3.2)
+Requirement already satisfied: typing-extensions==3.10.0.0 in c:\users\user\appdata\local\packages\pythonsoftwarefoundation.python.3.8_qbz5n2kfra8p0\localcache\local-packages\python38\site-packages (from -r requirements.txt (line 66)) (3.10.0.0)
+Requirement already satisfied: urllib3==1.26.6 in c:\users\user\appdata\local\packages\pythonsoftwarefoundation.python.3.8_qbz5n2kfra8p0\localcache\local-packages\python38\site-packages (from -r requirements.txt (line 67)) (1.26.6)
+Requirement already satisfied: wasabi==0.8.2 in c:\users\user\appdata\local\packages\pythonsoftwarefoundation.python.3.8_qbz5n2kfra8p0\localcache\local-packages\python38\site-packages (from -r requirements.txt (line 68)) (0.8.2)
+Requirement already satisfied: wcwidth==0.2.5 in c:\users\user\appdata\local\packages\pythonsoftwarefoundation.python.3.8_qbz5n2kfra8p0\localcache\local-packages\python38\site-packages (from -r requirements.txt (line 69)) (0.2.5)
+Requirement already satisfied: wrapt==1.12.1 in c:\users\user\appdata\local\packages\pythonsoftwarefoundation.python.3.8_qbz5n2kfra8p0\localcache\local-packages\python38\site-packages (from -r requirements.txt (line 70)) (1.12.1)
+Requirement already satisfied: zipp==3.5.0 in c:\users\user\appdata\local\packages\pythonsoftwarefoundation.python.3.8_qbz5n2kfra8p0\localcache\local-packages\python38\site-packages (from -r requirements.txt (line 71)) (3.5.0)
+Requirement already satisfied: setuptools>=18.5 in c:\program files\windowsapps\pythonsoftwarefoundation.python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\site-packages (from ipython==7.22.0->-r requirements.txt (line 16)) (56.0.0)
+WARNING: You are using pip version 21.2.2; however, version 21.3.1 is available.
+You should consider upgrading via the 'C:\Users\User\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\python.exe -m pip install --upgrade pip' command.
+
+(contohpackage) D:\ocbcnisp\ocbcpython\sesi3\contohpackage\Scripts>^A
+
+
