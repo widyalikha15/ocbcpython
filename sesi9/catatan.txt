@@ -1,0 +1,25 @@
+#instalasi
+
+python -m venv sesi9
+cd sesi9
+Scripts\activate
+pip install flask
+pip install connexion[swagger-ui]
+pip install Flask-SQLAlchemy flask-marshmallow marshmallow-sqlalchemy marshmallow
+
+#https://docs.google.com/document/d/194Obv-bXNSRLL0GOKcs678zY4KMSr6OCoBajfGvNStw/edit?usp=drive_web&ouid=111360323843648937337
+download repo people.db
+https://github.com/ardhiraka/H8Flask/blob/master/version2/people.db
+
+#extension
+SQLite
+v0.14.0
+alexcvzz
+865,561
+(46)
+Explore and query SQLite databases.
+
+#Select a Python interpreter // pojok kiri bawah warna biru
+
+run
+http://127.0.0.1:5000/
