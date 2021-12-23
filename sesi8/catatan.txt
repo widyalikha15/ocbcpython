@@ -1,0 +1,18 @@
+https://colab.research.google.com/drive/1rHbk-PGXMkQyvOUXKyToqye111-FnqWm?usp=sharing#scrollTo=N8ftD0VmrCxD
+buat file app.py //server.py
+buat folder templates
+buat file templates/home.html
+
+(sesi8) D:\ocbcnisp\ocbcpython\sesi8>
+pip install connexion[swagger-ui]
+pip install Flask
+
+(sesi8) D:\ocbcnisp\ocbcpython\sesi8>set FLASK_APP=app
+
+(sesi8) D:\ocbcnisp\ocbcpython\sesi8>set FLASK_ENV=development
+
+(sesi8) D:\ocbcnisp\ocbcpython\sesi8>flask run
+
+python app.py
+
+http://127.0.0.1:5000/

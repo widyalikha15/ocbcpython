@@ -1,0 +1,3 @@
+(sesi7) D:\ocbcnisp\ocbcpython\sesi7>
+(sesi7) D:\ocbcnisp\ocbcpython\sesi7>pip install Flask
+(sesi7) D:\ocbcnisp\ocbcpython\sesi7>python app.py
