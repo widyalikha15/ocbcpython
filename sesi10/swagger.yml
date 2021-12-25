@@ -237,7 +237,6 @@ paths:
                       type: string
                       description: Create/Update timestamp of associated person
 
-
   /people/{person_id}/notes:
     post:
       operationId: notes.create

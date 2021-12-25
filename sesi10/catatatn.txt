@@ -1,6 +1,8 @@
 pip install -r requirements.txt //https://github.com/ardhiraka/H8Flask/blob/master/requirements.txt
 python build_database.py  //https://github.com/ardhiraka/H8Flask/tree/master/version3
 
+
+
 run
 http://127.0.0.1:5000/
 
@@ -16,3 +18,9 @@ Note.query.join(Person, Person.person_id == Note.person_id, Note.note_id == note
 
 note = (Note.query.filter(Note.person_id == person_id).filter(
         Note.note_id == note_id).one_or_none())
+
+
+
+untuk 10
+pip list
+pip freeze > requirements.txt 
