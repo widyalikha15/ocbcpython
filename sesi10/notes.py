@@ -35,6 +35,7 @@ def read_one(person_id, note_id):
     # Query the database for the note
     note = (
         Note.query.join(Person, Person.person_id == Note.person_id)
+        # Note.query.join(Person, Person.person_id == Note.person_id, Note.note_id == note_id)
         .filter(Person.person_id == person_id)
         .filter(Note.note_id == note_id)
         .one_or_none()
@@ -89,7 +90,7 @@ def update(person_id, note_id, note):
     :return:                200 on success
     """
     update_note = (
-        Note.query.filter(Note.person_id == person_id)
+        Note.query.filter(Person.person_id == person_id)
         .filter(Note.note_id == note_id)
         .one_or_none()
     )
@@ -128,8 +129,11 @@ def delete(person_id, note_id):
     """
     # Get the note requested
     note = (
-        Note.query.join(Person, Person.person_id == Note.person_id).filter(
-            Person.person_id == person_id, Note.note_id == note_id).one_or_none()
+        # Note.query.filter(Person.person_id == person_id)
+        Note.query.join(Person, Person.person_id == Note.person_id)
+        .filter(Person.person_id == person_id)
+        .filter(Note.note_id == note_id)
+        .one_or_none()
     )
 
     # did we find a note?

@@ -20,7 +20,7 @@ note = (Note.query.filter(Note.person_id == person_id).filter(
         Note.note_id == note_id).one_or_none())
 
 
-
+di sesi 9
 untuk 10
 pip list
 pip freeze > requirements.txt 

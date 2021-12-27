@@ -55,6 +55,7 @@ paths:
                         type: string
                         description: Create/Update timestamp of this note
 
+    #POST
     post:
       operationId: people.create
       tags:
@@ -93,6 +94,7 @@ paths:
                 type: string
                 description: Creation/Update timestamp of the person record
 
+  #GET by Id
   /people/{person_id}:
     get:
       operationId: people.read_one
@@ -141,6 +143,7 @@ paths:
                       type: string
                       description: Create/Update timestamp of this note
 
+    #PUT
     put:
       operationId: people.update
       tags:
@@ -182,6 +185,7 @@ paths:
                 type: string
                 description: Creation/Update timestamp of the person record
 
+    #DELETE
     delete:
       operationId: people.delete
       tags:
@@ -198,6 +202,7 @@ paths:
         200:
           description: Successfully deleted a person
 
+  #GET notes
   /notes:
     get:
       operationId: notes.read_all
@@ -237,6 +242,8 @@ paths:
                       type: string
                       description: Create/Update timestamp of associated person
 
+
+  #POST 
   /people/{person_id}/notes:
     post:
       operationId: notes.create
@@ -278,6 +285,8 @@ paths:
                 type: string
                 description: Creation/Update timestamp of the person record
 
+
+  #GET
   /people/{person_id}/notes/{note_id}:
     get:
       operationId: notes.read_one
@@ -315,6 +324,8 @@ paths:
                 type: string
                 description: Creation/Update timestamp of the note record
 
+
+    #PUT
     put:
       operationId: notes.update
       tags:
@@ -358,6 +369,8 @@ paths:
                 type: string
                 description: Creation/Update timestamp of the note record
 
+
+    #DELETE
     delete:
       operationId: notes.delete
       tags:
