@@ -59,3 +59,9 @@ Use heroku addons:docs heroku-postgresql to view documentation
 DATABASE_URL: postgres://lvfdgrdzxcnidz:9b62920edf79a5cc5d15f46398cf4b25d72d6479d43fbecf10401a15f79f8326@ec2-34-230-133-163.compute-1.amazonaws.com:5432/d1377iueeoiac1
 
 (sesi13) D:\ocbcnisp\ocbcpython\sesi13>
+
+(sesi13) D:\ocbcnisp\ocbcpython\sesi13>git add .
+
+(sesi13) D:\ocbcnisp\ocbcpython\sesi13>git commit -m "add improvment" 
+
+sesi13) D:\ocbcnisp\ocbcpython\sesi13>git push heroku master

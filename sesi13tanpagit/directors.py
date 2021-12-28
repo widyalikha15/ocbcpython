@@ -158,7 +158,7 @@ def get_by_gender(gender):
     :return:                director matching id
     """
     # Build the initial query
-    director = Director.query.order_by(db.desc(Director.id)).filter(Director.gender == gender).outerjoin(Movie).all()
+    director = Director.query.order_by(db.desc(Director.id)).filter(Director.gender == gender).outerjoin(Movie).limit(10)
 
     # is gender code is right?
     if gender in [0,1,2]:
