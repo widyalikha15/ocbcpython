@@ -157,7 +157,7 @@ def get_by_gender(gender):
     :param director_id:     Id of director to find
     :return:                director matching id
     """
-    # Build the initial query
+    # Build the initial query and limit 10
     director = Director.query.order_by(db.desc(Director.id)).filter(Director.gender == gender).outerjoin(Movie).limit(10)
 
     # is gender code is right?
