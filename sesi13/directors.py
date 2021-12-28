@@ -135,3 +135,39 @@ def delete(director_id):
     # Otherwise, nope, didn't find that director
     else:
         abort(404, f"Director not found for Id: {director_id}")
+
+def read_offset_limit(limit):
+    """
+    This function responds to a request for /api/director/{offset}/{limit} with the complete lists of people
+    :param offset:      Index where to get data
+    :param limit:       number of data to get
+    :return:            json string of list of director
+    """
+    # Create the list of director from our data
+    director = Director.query.order_by(db.desc(Director.id)).limit(limit).all()
+
+    # Serialize the data for the response
+    director_schema = DirectorSchema(many=True)
+    data = director_schema.dump(director)
+    return data
+
+def get_by_gender(gender):
+    """
+    This function responds to a request for /api/director/{director_id} with one matching director
+    :param director_id:     Id of director to find
+    :return:                director matching id
+    """
+    # Build the initial query
+    director = Director.query.order_by(db.desc(Director.id)).filter(Director.gender == gender).outerjoin(Movie).all()
+
+    # is gender code is right?
+    if gender in [0,1,2]:
+
+        # Serialize the data for the response
+        director_schema = DirectorSchema(many=True)
+        data = director_schema.dump(director)
+        return data
+
+    # Otherwise, nope, didn't find the code
+    else:
+        abort(404, f"Gender code not found : {gender} , Choice are ( 0,1,2 )")

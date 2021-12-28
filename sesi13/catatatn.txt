@@ -31,3 +31,31 @@ pytest routeTest.py
 sesi13) D:\ocbcnisp\ocbcpython\sesi13>python -m pytest
 
 pip install -r requirements.txt
+
+icrosoft Windows [Version 10.0.19043.1415]
+(c) Microsoft Corporation. All rights reserved.
+
+D:\ocbcnisp\ocbcpython\sesi13>d:/ocbcnisp/ocbcpython/sesi13/Scripts/activate.bat
+
+(sesi13) D:\ocbcnisp\ocbcpython\sesi13>git init
+Initialized empty Git repository in D:/ocbcnisp/ocbcpython/sesi13/.git/
+
+(sesi13) D:\ocbcnisp\ocbcpython\sesi13>echo "web: gunicorn app:connex_app" > Procfile
+
+(sesi13) D:\ocbcnisp\ocbcpython\sesi13>heroku create h8ocbc2-milestone1-002
+Creating ⬢ h8ocbc2-milestone1-002... done
+https://h8ocbc2-milestone1-002.herokuapp.com/ | https://git.heroku.com/h8ocbc2-milestone1-002.git
+
+(sesi13) D:\ocbcnisp\ocbcpython\sesi13>heroku addons:create heroku-postgresql:hobby-dev --app h8ocbc2-milestone1-002 
+Creating heroku-postgresql:hobby-dev on ⬢ h8ocbc2-milestone1-002... free
+Database has been created and is available
+ ! This database is empty. If upgrading, you can transfer
+ ! data from another database with pg:copy
+Created postgresql-perpendicular-44901 as DATABASE_URL
+Use heroku addons:docs heroku-postgresql to view documentation
+
+(sesi13) D:\ocbcnisp\ocbcpython\sesi13>heroku config --app h8ocbc2-milestone1-002
+=== h8ocbc2-milestone1-002 Config Vars
+DATABASE_URL: postgres://lvfdgrdzxcnidz:9b62920edf79a5cc5d15f46398cf4b25d72d6479d43fbecf10401a15f79f8326@ec2-34-230-133-163.compute-1.amazonaws.com:5432/d1377iueeoiac1
+
+(sesi13) D:\ocbcnisp\ocbcpython\sesi13>

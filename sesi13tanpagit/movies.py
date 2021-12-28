@@ -48,6 +48,32 @@ def read_one(movie_id):
     else:
         abort(404, f"Director not found for Id: {movie_id}")
 
+def read_offset_limit(limit):
+    """
+    This function responds to a request for /api/movie/{offset}/{limit} with the limited list of movie, sorted by movie release date
+    :return:                json list of all movie for all director
+    """
+    # Query the database for all the movies
+    movie = Movie.query.order_by(db.desc(Movie.id)).limit(limit).all()
+
+    # Serialize the list of movies from our data
+    movie_schema = MovieSchema(many=True)
+    data = movie_schema.dump(movie)
+    return data
+
+def get_highest_rating():
+    """
+    This function responds to a request for /api/movie/popular
+    :return:                json list of top 5 movie
+    """
+    # Query the database for all the movies
+    movie = Movie.query.order_by(db.desc(Movie.vote_average)).limit(5).all()
+
+    # Serialize the list of movies from our data
+    movie_schema = MovieSchema(many=True)
+    data = movie_schema.dump(movie)
+    return data
+
 def create(director_id, movie):
     """
     This function creates a new movie related to the passed in person id.
