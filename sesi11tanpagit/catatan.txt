@@ -1,0 +1,92 @@
+#instalasi
+
+python -m venv sesi11
+cd sesi11
+Scripts\activate
+pip install flask
+pip install connexion[swagger-ui]
+pip install Flask-SQLAlchemy flask-marshmallow marshmallow-sqlalchemy marshmallow
+
+#https://docs.google.com/document/d/194Obv-bXNSRLL0GOKcs678zY4KMSr6OCoBajfGvNStw/edit?usp=drive_web&ouid=111360323843648937337
+download repo people.db
+https://github.com/ardhiraka/H8Flask/blob/master/version2/people.db
+
+#extension
+SQLite
+v0.14.0
+alexcvzz
+865,561
+(46)
+Explore and query SQLite databases.
+
+#Select a Python interpreter // pojok kiri bawah warna biru
+
+run
+http://127.0.0.1:5000/ 
+d
+
+heroku
+widyalikha.15@gmail.com
+WIDYAlikha15@
+
+(sesi11) D:\ocbcnisp\ocbcpython\sesi11>git init
+Initialized empty Git repository in D:/ocbcnisp/ocbcpython/sesi11/.git/
+
+(sesi11) D:\ocbcnisp\ocbcpython\sesi11>echo "web: gunicorn app:connex_app" > Procfile
+
+requirements.txt
+psycopg2
+gunicorn
+
+(sesi11) D:\ocbcnisp\ocbcpython\sesi11>heroku create widya-python-flask-rest 
+
+(sesi11) D:\ocbcnisp\ocbcpython\sesi11>heroku addons:create heroku-postgresql:hobby-dev --app widya-python-flask-rest
+
+(sesi11) D:\ocbcnisp\ocbcpython\sesi11>heroku config --app widya-python-flask-rest
+
+#app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + os.path.join(basedir, 'people.db')
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://hjnrfyailwwnrz:c83cf4a63cd2089d07b0314b2a057f4d068f44264c433628eaaa850bdc16df13@ec2-3-230-219-251.compute-1.amazonaws.com:5432/d80e1h5lh77ui' + os.path.join(basedir, 'people.db')
+
+
+(sesi11) D:\ocbcnisp\ocbcpython\sesi11>git add .
+warning: LF will be replaced by CRLF in requirements.txt.
+The file will have its original line endings in your working directory       
+warning: LF will be replaced by CRLF in static/css/home.css.
+The file will have its original line endings in your working directory       
+warning: LF will be replaced by CRLF in static/js/home.js.
+The file will have its original line endings in your working directory       
+warning: LF will be replaced by CRLF in templates/home.html.
+The file will have its original line endings in your working directory       
+
+(sesi11) D:\ocbcnisp\ocbcpython\sesi11>git commit -m "add heroku deployment"
+[master (root-commit) fd2add6] add heroku deployment
+ 15 files changed, 928 insertions(+)
+ create mode 100644 Procfile
+ create mode 100644 __init__.py
+ create mode 100644 app.py
+ create mode 100644 build_database.py
+ create mode 100644 catatan.txt
+ create mode 100644 config.py
+ create mode 100644 models.py
+ create mode 100644 people.db
+ create mode 100644 people.py
+ create mode 100644 pyvenv.cfg
+ create mode 100644 requirements.txt
+ create mode 100644 static/css/home.css
+ create mode 100644 static/js/home.js
+ create mode 100644 swagger.yml
+ create mode 100644 templates/home.html
+
+(sesi11) D:\ocbcnisp\ocbcpython\sesi11>heroku git:remote -a widya-python-flask-rest
+set git remote heroku to https://git.heroku.com/widya-python-flask-rest.git  
+
+(sesi11) D:\ocbcnisp\ocbcpython\sesi11>git push heroku master 
+
+(sesi11) D:\ocbcnisp\ocbcpython\sesi11>heroku open
+
+(sesi11) D:\ocbcnisp\ocbcpython\sesi11>heroku run python
+
+exec(open("build_database.py").read())
+
+
+
